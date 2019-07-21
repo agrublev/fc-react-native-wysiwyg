@@ -1,0 +1,30 @@
+# Freedcamp Simple Editor Configuration that works across major IDE's
+# PhpStorm/WebStorm https://plugins.jetbrains.com/plugin/7294-editorconfig
+# Atom https://github.com/sindresorhus/atom-editorconfig
+# NetBeans https://github.com/welovecoding/editorconfig-netbeans
+# EditorConfig helps developers define and maintain consistent
+# coding styles between different editors and IDEs
+# editorconfig.org
+
+root = true
+
+
+[*]
+charset = utf-8
+trim_trailing_whitespace = false
+insert_final_newline = false
+indent_style = space
+indent_size = 4
+
+
+[*.txt]
+indent_style = tab
+indent_size = 4
+
+[*.{diff,md,less,js}]
+trim_trailing_whitespace = false
+quote_type = double
+
+[*.php]
+quote_type = single
+trim_trailing_whitespace = false
